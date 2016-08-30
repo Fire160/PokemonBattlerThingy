@@ -6,9 +6,9 @@ public class Move
 		{
 		moveNam = n;
 		}
-	public void executeMove()
+	public void executeMove(String pokNam)
 		{
-		
+		System.out.println(pokNam + " used " + moveNam);
 		}
 	public String getMoveNam()
 		{
