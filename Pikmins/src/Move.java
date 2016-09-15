@@ -2,9 +2,11 @@
 public class Move
 	{
 	private String moveNam;
-	public Move(String n)
+	private int type;
+	public Move(String n,int m)
 		{
 		moveNam = n;
+		type = m;
 		}
 	public void executeMove(String pokNam)
 		{
@@ -17,5 +19,13 @@ public class Move
 	public void setMoveNam(String moveNam)
 		{
 		this.moveNam = moveNam;
+		}
+	public int getType()
+		{
+		return type;
+		}
+	public void setType(int type)
+		{
+		this.type = type;
 		}
 	}
